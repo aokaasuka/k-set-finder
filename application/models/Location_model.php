@@ -15,7 +15,7 @@ class Location_model extends CI_Model
 
     public function searchData($keyword)
     {
-        $this->db->like('drama_title', $keyword);
+        $this->db->where('drama_title', $keyword);
         return $this->db->get('location')->result_array();
     }
 }
