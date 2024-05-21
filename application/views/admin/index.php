@@ -61,7 +61,7 @@
     // Variabel map telah didefinisikan sebelumnya
     var map = L.map('map', {
         center: [36.55486506323537, 127.8547037445218],
-        zoom: 2,
+        zoom: 7.4,
         layers: [OpenStreetMap_Mapnik]
     });
 

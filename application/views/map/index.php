@@ -62,7 +62,7 @@
     // Variabel map telah didefinisikan sebelumnya
     var map = L.map('map', {
         center: [36.55486506323537, 127.8547037445218],
-        zoom: 2,
+        zoom: 7.4,
         layers: [OpenStreetMap_Mapnik]
     });
 
@@ -157,8 +157,8 @@
                     <p><i class="fas fa-fw fa-camera" style="color: blue"></i> Scene: ${detailData.scene}</p>
                     <p><i class="fas fa-fw fa-location-dot" style="color: blue"></i> Location:  ${detailData.location_address}</p>
                     <?php if (!empty($l['street_view'])) : ?>
-                        <p><i class="fas fa-fw fa-street-view" style="color: blue"></i> <a target="_blank" href="<?= $l['street_view']; ?>">StreetView</a></p>
-                    <?php endif; ?>                    <h6 class="mt-4 text-secondary">Other relevant places</h6>
+                        <p><i class="fas fa-fw fa-street-view" style="color: blue"></i> <a target="_blank" href="<?= $l['street_view']; ?>">360 View</a></p>
+                        <?php endif; ?>                    <h6 class="mt-4 text-secondary">Other relevant places</h6>
                     <ul class="other-locations">
                         <?php foreach ($location as $l) : ?>
                             <li>
